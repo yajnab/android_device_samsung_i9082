@@ -78,3 +78,8 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/i9082/ril/
+
+# Recovery
+TARGET_RECOVERY_FSTAB := device/samsung/i9082/fstab.baffin
+TARGET_RECOVERY_INITRC := device/samsung/i9082/recovery/recovery.rc
+RECOVERY_FSTAB_VERSION := 2

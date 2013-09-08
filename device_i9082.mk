@@ -12,24 +12,24 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/i9082/overlay
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/i9082/init.capri_ss_baffin.rc:root/init.capri_ss_baffin.rc \
-	device/samsung/i9082/init.bcm281x5.usb.rc:root/init.bcm281x5.usb.rc \
-	device/samsung/i9082/init.log.rc:root/init.log.rc \
-	device/samsung/i9082/init.recovery.capri_ss_baffin.rc:root/init.recovery.capri_ss_baffin.rc \
-	device/samsung/i9082/lpm.rc:root/lpm.rc \
-	device/samsung/i9082/ueventd.capri_ss_baffin.rc:root/ueventd.capri_ss_baffin.rc \
-	device/samsung/i9082/fstab.capri_ss_baffin:root/fstab.capri_ss_baffin \
+	device/samsung/i9082/ramdisk/init.capri_ss_baffin.rc:root/init.capri_ss_baffin.rc \
+	device/samsung/i9082/ramdisk/init.bcm281x5.usb.rc:root/init.bcm281x5.usb.rc \
+	device/samsung/i9082/ramdisk/init.log.rc:root/init.log.rc \
+	device/samsung/i9082/ramdisk/init.recovery.capri_ss_baffin.rc:root/init.recovery.capri_ss_baffin.rc \
+	device/samsung/i9082/ramdisk/lpm.rc:root/lpm.rc \
+	device/samsung/i9082/ramdisk/ueventd.capri_ss_baffin.rc:root/ueventd.capri_ss_baffin.rc \
+	device/samsung/i9082/ramdisk/fstab.capri_ss_baffin:root/fstab.capri_ss_baffin \
 
 PRODUCT_COPY_FILES += \
-	device/samsung/i9082/vold.fstab:system/etc/vold.fstab \
+	device/samsung/i9082/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/i9082/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
-	device/samsung/i9082/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
-	device/samsung/i9082/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	device/samsung/i9082/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
-	device/samsung/i9082/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
+	device/samsung/i9082/prebuilt/usr/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	device/samsung/i9082/prebuilt/usr/bcm_keypad_v2.kl:system/usr/keylayout/bcm_keypad_v2.kl \
+	device/samsung/i9082/prebuilt/usr/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	device/samsung/i9082/prebuilt/usr/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
+	device/samsung/i9082/prebuilt/usr/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \

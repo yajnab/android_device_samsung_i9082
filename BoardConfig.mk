@@ -36,7 +36,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/i9082/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9082/libbt_vndcfg.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/i9082/bluetooth/libbt_vndcfg.txt
 
 # Connectivity - Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
@@ -65,7 +65,7 @@ BOARD_USES_SKTEXTBOX := true
 
 # Hardware rendering
 USE_OPENGL_RENDERER := true
-BOARD_EGL_CFG := device/samsung/i9082/egl.cfg
+BOARD_EGL_CFG := device/samsung/i9082/prebuilt/egl.cfg
 BOARD_EGL_NEEDS_LEGACY_FB := true
 COMMON_GLOBAL_CFLAGS += -DMR0_CAMERA_BLOB
 
